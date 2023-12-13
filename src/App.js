@@ -1,14 +1,11 @@
-import Counter from "./Counter";
+import Todo from "./Todo";
 
 function App() {
   return (
-    <>
-    <h1>Counter</h1>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <Counter />
+    
+<>
+<div className="title">TODO LIST</div>
+    <Todo />
     </>
   );
 }
