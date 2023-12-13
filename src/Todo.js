@@ -7,13 +7,13 @@ function Todo() {
     const[idcount,setIdcount]=useState(0);
 
      function handleSubmit(){
-        setIdcount(idcount+1);
+        if(input){setIdcount(idcount+1);
         setTodos((todos)=>(
             todos.concat({
                 text:input,
                 id: idcount
             })
-        ));
+        ));}
         setInput("");
     };
 const removeTodo=(id)=> setTodos((todos)=>todos.filter((t)=>t.id!==id));
